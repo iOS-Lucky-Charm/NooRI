@@ -17,6 +17,8 @@
 		679D45B529A75DAA00E7B67F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D45B429A75DAA00E7B67F /* LoginVC.swift */; };
 		679D45B729A75DB600E7B67F /* NewLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D45B629A75DB600E7B67F /* NewLoginVC.swift */; };
 		679D45B929A75DCB00E7B67F /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679D45B829A75DCB00E7B67F /* WelcomeVC.swift */; };
+		67D85D8629AB7582004B453C /* FriendsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D85D8429AB7581004B453C /* FriendsListVC.swift */; };
+		67D85D8729AB7582004B453C /* MyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D85D8529AB7581004B453C /* MyProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		679D45B429A75DAA00E7B67F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		679D45B629A75DB600E7B67F /* NewLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoginVC.swift; sourceTree = "<group>"; };
 		679D45B829A75DCB00E7B67F /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		67D85D8429AB7581004B453C /* FriendsListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListVC.swift; sourceTree = "<group>"; };
+		67D85D8529AB7581004B453C /* MyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		679D459729A75CCB00E7B67F /* iOS_Kakao */ = {
 			isa = PBXGroup;
 			children = (
+				67D85D8329AB7581004B453C /* Home */,
 				679D45B329A75D9400E7B67F /* Auth */,
 				679D45B229A75D8000E7B67F /* Resource */,
 				679D459E29A75CCB00E7B67F /* Main.storyboard */,
@@ -91,6 +96,15 @@
 				679D45B829A75DCB00E7B67F /* WelcomeVC.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		67D85D8329AB7581004B453C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				67D85D8429AB7581004B453C /* FriendsListVC.swift */,
+				67D85D8529AB7581004B453C /* MyProfileVC.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67D85D8629AB7582004B453C /* FriendsListVC.swift in Sources */,
 				679D459929A75CCB00E7B67F /* AppDelegate.swift in Sources */,
 				679D45B929A75DCB00E7B67F /* WelcomeVC.swift in Sources */,
+				67D85D8729AB7582004B453C /* MyProfileVC.swift in Sources */,
 				679D459B29A75CCB00E7B67F /* SceneDelegate.swift in Sources */,
 				679D45B529A75DAA00E7B67F /* LoginVC.swift in Sources */,
 				679D45B729A75DB600E7B67F /* NewLoginVC.swift in Sources */,
