@@ -24,12 +24,21 @@ class WelcomeVC: UIViewController {
         $0.addTarget(self, action: #selector(touchupBackButton), for: .touchUpInside)
     }
     
-    private func presentFriendListVC() {
-        let friendListVC = FriendsListVC()
-        friendListVC.modalPresentationStyle = .fullScreen
+//    private func presentFriendListVC() {
+//        let friendListVC = FriendsListVC()
+//        friendListVC.modalPresentationStyle = .fullScreen
+//        let sceneDeligate = UIApplication.shared.connectedScenes.first?.delegate
+//        as!SceneDelegate
+//        sceneDeligate.window?.rootViewController = UINavigationController(rootViewController: friendListVC)
+//
+//    }
+    
+    private func presentLoginVC() {
+        let loginVC = LoginVC()
+        loginVC.modalPresentationStyle = .formSheet
         let sceneDeligate = UIApplication.shared.connectedScenes.first?.delegate
         as!SceneDelegate
-        sceneDeligate.window?.rootViewController = UINavigationController(rootViewController: friendListVC)
+        sceneDeligate.window?.rootViewController = UINavigationController(rootViewController: loginVC)
         
     }
     
@@ -45,7 +54,7 @@ class WelcomeVC: UIViewController {
     }
     @objc
     private func touchupBackButton(){
-        presentFriendListVC()
+        presentLoginVC()
     }
 
 }
