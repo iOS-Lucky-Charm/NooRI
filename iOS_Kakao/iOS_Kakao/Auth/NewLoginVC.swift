@@ -29,6 +29,7 @@ class NewLoginVC: UIViewController {
     private let passwordTextField = UITextField().then {
         $0.backgroundColor = .white
         $0.placeholder = "비밀번호"
+        $0.isSecureTextEntry = true
     }
     
     private let passwordLineField = UITextField().then {
@@ -38,6 +39,7 @@ class NewLoginVC: UIViewController {
     private let passwordTextField2 = UITextField().then {
         $0.backgroundColor = .white
         $0.placeholder = "비밀번호 확인"
+        $0.isSecureTextEntry = true
     }
     
     private let passwordLineField2 = UITextField().then {
